@@ -5,5 +5,5 @@ This is a Python app built using Flask that allows users to upload .csv or .xlsx
 1) Clone the repository: `git clone https://github.com/labhayl/FileXplorer.git`  
 2) Navigate to the project directory: `cd FileXplorer`  
 3) Install the dependencies: `pip install -r requirements.txt`  
-4) Run the app: python app.py  
+4) Run the app: `python app.py`  
 5) Access the app in your web browser at: `http://localhost:5000`
