@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: lightgray;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid #007bff;
+            color: #007bff;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            color: #0056b3;
+            background-color: #e6faff;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>File</th>
+            <th>Action</th>
+        </tr>
+        {% for file in files %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ file }}</td>
+            <td>
+                <a class="btn" href="/open/{{ file }}">Open</a>
+                <a class="btn" href="/download/{{ file }}">Download</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
