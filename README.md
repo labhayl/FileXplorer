@@ -1,5 +1,5 @@
 # FileXplorer
-### Python App with File Upload and Admin Panel
+### Flask App with File Upload and Admin Panel
 
 This is a Python app built using ***Flask*** that allows users to upload .csv or .xlsx files, saves them in a folder, and provides an admin panel for managing the uploaded files. The app also includes functionality to download and open the uploaded files.
 
